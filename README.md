@@ -7,13 +7,13 @@ Basically [concat-stream](https://github.com/maxogden/concat-stream) but minimal
 
 Here's a simple example:
 
-  var concat2 = require('gather-stream'),
-      fs = require('fs');
-
-  fs.createReadStream('README.md').pipe(concat2(function (error,buffer) {
-    if (error) console.error(error);
-    else console.log("Read file, it was %s bytes long.", buffer.length);
-  });
+    var concat2 = require('gather-stream'),
+        fs = require('fs');
+    
+    fs.createReadStream('README.md').pipe(concat2(function (error,buffer) {
+      if (error) console.error(error);
+      else console.log("Read file, it was %s bytes long.", buffer.length);
+    });
 
 
 ## API
